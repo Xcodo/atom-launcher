@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -6,6 +7,7 @@ namespace AtomLauncher
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             var argsSb = new StringBuilder();
